@@ -1,22 +1,25 @@
-:root {
-	font-family: 'DM Sans', sans-serif;
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+@import "tailwindcss";
 
-	font-optical-sizing: auto;
-	font-weight: 400;
-	color: #202b24;
-	background: #f7f7f1;
+@theme {
+  --color-forest: #1f4d3a;
+  --color-leaf: #2f7a57;
+  --color-cream: #fbf6ee;
+  --color-terra: #c8693a;
+  --color-ink: #23201c;
+  --font-display: "Playfair Display", serif;
+  --font-body: "Poppins", sans-serif;
 }
 
-* {
-	box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-	min-width: 320px;
-	min-height: 100vh;
-	margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-cream);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
