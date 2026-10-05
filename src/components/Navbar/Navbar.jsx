@@ -5,11 +5,11 @@ import WhatsAppButton from "../WhatsAppButton/WhatsAppButton.jsx";
 
 const links = [
   ["Home", "/"],
+  ["About", "/about"],
+  ["Gallery", "/gallery"],
   ["Menu", "/menu"],
   ["Experiences", "/experiences"],
-  ["Gallery", "/gallery"],
   ["Reservations", "/reservations"],
-  ["About", "/about"],
   ["Contact", "/contact"],
 ];
 

@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-forest: #1f4d3a;
-  --color-leaf: #2f7a57;
-  --color-cream: #fbf6ee;
-  --color-terra: #c8693a;
-  --color-ink: #23201c;
+  --color-forest: #2E7D32;
+  --color-leaf: #66BB6A;
+  --color-cream: #F1F8E9;
+  --color-terra: #1B5E20;
+  --color-ink: #1B1B1B;
+  --color-border-green: #D5E8D4;
   --font-display: "Playfair Display", serif;
   --font-body: "Poppins", sans-serif;
 }

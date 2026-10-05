@@ -17,10 +17,16 @@ import MapEmbed from "../../components/MapEmbed/MapEmbed.jsx";
 function Hero() {
   const { hero } = site;
   return (
-    <header className="relative flex min-h-[calc(100svh-4rem)] items-center justify-center overflow-hidden bg-ink text-center text-white">
+    <header className="relative flex min-h-[calc(100svh-4rem)] items-center justify-center overflow-hidden bg-gradient-to-br from-[#2E7D32] via-[#2E7D32] to-[#1B5E20] text-center text-white">
       <picture>
         {hero.mobileImage && <source media="(max-width: 767px)" srcSet={hero.mobileImage} />}
-        <img src={hero.image} alt="" className="absolute inset-0 h-full w-full object-cover" fetchPriority="high" />
+        <img
+          src={hero.image}
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover"
+          fetchPriority="high"
+          onError={(event) => { event.currentTarget.style.display = "none"; }}
+        />
       </picture>
 
       {hero.video && (
@@ -37,7 +43,7 @@ function Hero() {
         </video>
       )}
 
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#1B5E20]/35 via-[#1B5E20]/20 to-[#1B5E20]/55" />
 
       <div className="relative max-w-3xl px-6">
         <h1 className="font-display text-4xl md:text-6xl">{site.name}</h1>

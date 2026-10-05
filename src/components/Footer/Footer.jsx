@@ -1,31 +1,42 @@
-import { Link } from "react-router-dom";
 import { site } from "../../data/siteData.js";
 import { telLink, whatsappLink } from "../../utils/helpers.js";
 import HoursList from "../HoursList/HoursList.jsx";
-
-const quickLinks = [
-  ["Menu", "/menu"],
-  ["Experiences", "/experiences"],
-  ["Gallery", "/gallery"],
-  ["Reservations", "/reservations"],
-  ["About", "/about"],
-  ["Contact", "/contact"],
-];
 
 export default function Footer() {
   const socials = Object.entries(site.social).filter(([, url]) => url);
 
   return (
-    <footer className="bg-ink px-6 pb-28 pt-14 text-white/80">
-      <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-3">
+    <footer className="border-t-4 border-leaf/70 bg-gradient-to-br from-terra via-forest to-[#245f28] px-6 pb-7 pt-9 text-white/75">
+      <div className="mx-auto grid max-w-6xl gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr]">
         <div>
-          <p className="font-display text-2xl text-white">{site.name}</p>
-          <p className="mt-3 text-sm">{site.tagline}</p>
+          <div className="flex items-center gap-3">
+            {site.logo && (
+              <img
+                src={site.logo}
+                alt=""
+                className="h-11 w-11 rounded-xl bg-white p-1 object-contain shadow-sm"
+              />
+            )}
+            <div>
+              <p className="font-display text-xl text-white">{site.name}</p>
+              <p className="mt-0.5 text-xs font-medium uppercase tracking-[0.18em] text-leaf">
+                Nature · Food · Adventure
+              </p>
+            </div>
+          </div>
+          <p className="mt-3 max-w-sm text-sm leading-relaxed">{site.tagline}</p>
           {socials.length > 0 && (
-            <ul className="mt-4 flex flex-wrap gap-4 text-sm">
+            <ul className="mt-4 flex flex-wrap gap-2">
               {socials.map(([name, url]) => (
                 <li key={name}>
-                  <a href={url} target="_blank" rel="noopener noreferrer" className="capitalize underline">{name}</a>
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full border border-white/20 px-3 py-1 text-xs capitalize transition hover:border-leaf hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-leaf"
+                  >
+                    {name}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -33,31 +44,45 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="mb-3 font-semibold text-white">Visit us</h3>
-          <p className="mb-4 text-sm">{site.address}</p>
-          <HoursList />
+          <h3 className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-leaf">Visit us</h3>
+          <a
+            href={site.mapUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm leading-relaxed transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-leaf"
+          >
+            {site.address}
+            <span className="ml-1 text-leaf" aria-hidden="true">↗</span>
+          </a>
+          <div className="mt-3 border-t border-white/15 pt-3">
+            <HoursList />
+          </div>
         </div>
 
         <div>
-          <h3 className="mb-3 font-semibold text-white">Contact</h3>
-          <ul className="space-y-1 text-sm">
-            <li><a href={telLink(site.phone)} className="underline">{site.phone}</a></li>
+          <h3 className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-leaf">Get in touch</h3>
+          <ul className="space-y-2 text-sm">
             <li>
-              <a href={whatsappLink(site.whatsapp, "Hello!")} target="_blank" rel="noopener noreferrer" className="underline">
-                WhatsApp us
+              <a href={telLink(site.phone)} className="transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-leaf">
+                {site.phone}
               </a>
             </li>
-            <li><a href={`mailto:${site.email}`} className="underline">{site.email}</a></li>
-          </ul>
-          <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-sm">
-            {quickLinks.map(([label, to]) => (
-              <li key={to}><Link to={to} className="hover:text-white">{label}</Link></li>
-            ))}
+            <li>
+              <a href={whatsappLink(site.whatsapp, "Hello!")} target="_blank" rel="noopener noreferrer" className="transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-leaf">
+                Message us on WhatsApp <span className="text-leaf" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href={`mailto:${site.email}`} className="break-words transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-leaf">
+                {site.email}
+              </a>
+            </li>
           </ul>
         </div>
+
       </div>
 
-      <p className="mt-10 text-center text-xs opacity-60">
+      <p className="mx-auto mt-7 max-w-6xl border-t border-white/15 pt-4 text-center text-xs text-white/55">
         © {new Date().getFullYear()} {site.name}. All rights reserved.
       </p>
     </footer>

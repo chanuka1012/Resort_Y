@@ -65,4 +65,17 @@ export const experiences = [
     photos: ["/images/tour/yakdessagala-01.jpg", "/images/tour/yakdessagala-02.jpg"],
     // video: { src: "/videos/yakdessagala-tour.mp4", poster: "/videos/yakdessagala-tour-poster.jpg" },
   },
+  {
+    id: "tour",
+    icon: "⛰️",
+    title: "Village Tour",
+    tagline: "Explore Village with a guide",
+    description:
+      "Join our guided tour of Village and discover the place and its story. Add the duration, meeting point and what is included.",
+    highlights: ["Guided tour", "Photo stops", "Easy to combine with a meal or pool visit"],
+    note: "Tour times and prices: ask us on WhatsApp.",
+    image: "/images/tour/yakdessagala-cover.jpg",
+    photos: ["/images/tour/yakdessagala-01.jpg", "/images/tour/yakdessagala-02.jpg"],
+    // video: { src: "/videos/yakdessagala-tour.mp4", poster: "/videos/yakdessagala-tour-poster.jpg" },
+  },
 ];

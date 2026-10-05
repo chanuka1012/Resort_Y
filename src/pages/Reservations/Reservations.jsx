@@ -117,7 +117,7 @@ export default function Reservations() {
 
         <button
           type="submit"
-          className="min-h-11 rounded-full bg-terra px-8 py-3 font-semibold text-white transition hover:bg-terra/90 md:col-span-2"
+          className="min-h-11 rounded-full bg-forest px-8 py-3 font-semibold text-white transition hover:bg-terra md:col-span-2"
         >
           Send reservation on WhatsApp
         </button>

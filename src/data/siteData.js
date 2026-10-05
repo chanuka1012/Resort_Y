@@ -1,11 +1,11 @@
 // TODO: replace every value below with your real details.
 export const site = {
-  name: "Yakdessagala Resort & Retreat",
+  name: "Yakdessagala Resort",
   shortName: "Yakdessagala",
-  tagline: "Fresh Sri Lankan food, a swimming pool, adventure activities, sports, cabanas and guided tours.",
+  tagline: "Fresh food, a swimming pool, adventure activities, sports, cabanas and guided tours.",
   description:
     "Enjoy freshly cooked Sri Lankan favourites, cool off in our swimming pool, try adventure activities and friendly sports, relax in our cabanas, or join a guided tour to Yakdessagala. Everything for a perfect day out, in one place.",
-  logo: "", // e.g. "/images/logo.png" (optional)
+  logo: "/yakdessagala.jpg", // e.g. "/images/logo.png" (optional)
 
   phone: "+94700000000",
   whatsapp: "+94700000000", // international format

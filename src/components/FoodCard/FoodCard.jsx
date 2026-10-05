@@ -26,7 +26,7 @@ export default function FoodCard({ item }) {
           <span className="font-semibold text-terra">{formatPrice(item.price)}</span>
           <button
             onClick={() => add(item.id)}
-            className="min-h-11 rounded-full bg-forest px-5 text-sm text-white transition hover:bg-leaf focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-terra"
+            className="min-h-11 rounded-full bg-forest px-5 text-sm text-white transition hover:bg-terra focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-terra"
           >
             {inCart ? `Add more (${inCart})` : "Add to order"}
           </button>

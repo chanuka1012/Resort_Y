@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const variants = {
-  solid: "bg-terra text-white hover:bg-terra/90",
+  solid: "bg-forest text-white hover:bg-terra",
   outline: "border border-forest text-forest hover:bg-forest hover:text-white",
   light: "border border-white text-white hover:bg-white hover:text-forest",
   whatsapp: "bg-[#25D366] text-white hover:opacity-90",

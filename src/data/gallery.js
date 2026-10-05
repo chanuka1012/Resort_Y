@@ -13,6 +13,7 @@ export const galleryItems = [
   { category: "Cabanas", type: "image", src: "/images/cabanas/cabana-02.jpg", alt: "Inside a cabana" },
   { category: "Tour", type: "image", src: "/images/tour/yakdessagala-01.jpg", alt: "Yakdessagala tour" },
   { category: "Tour", type: "image", src: "/images/tour/yakdessagala-02.jpg", alt: "Tour group at Yakdessagala" },
+  // { category: "Tour", type: "image", src: "/images/tour/village-03.jpg", alt: "Village tour" },
 
   // Short video clips. Un-comment when the files exist:
   // { category: "Pool", type: "video", src: "/videos/pool.mp4", poster: "/videos/pool-poster.jpg", alt: "Pool video" },

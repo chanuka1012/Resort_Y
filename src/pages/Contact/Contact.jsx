@@ -90,7 +90,7 @@ export default function Contact() {
               />
             </div>
             {error && <p role="alert" className="text-sm text-red-700">{error}</p>}
-            <button type="submit" className="min-h-11 w-full rounded-full bg-terra px-8 py-3 font-semibold text-white hover:bg-terra/90">
+            <button type="submit" className="min-h-11 w-full rounded-full bg-forest px-8 py-3 font-semibold text-white transition hover:bg-terra">
               Send via WhatsApp
             </button>
           </form>
