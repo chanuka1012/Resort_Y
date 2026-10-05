@@ -23,7 +23,7 @@ export default function Navbar() {
     <nav className="fixed inset-x-0 top-0 z-40 bg-cream/95 shadow-sm backdrop-blur" aria-label="Main">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-2 font-display text-xl text-forest">
-          {site.logo && <img src={site.logo} alt="" className="h-9 w-9 object-contain" />}
+          {site.logo && <img src={site.logo} alt="" className="h-9 w-9 rounded-full object-cover" />}
           <span>{site.shortName}</span>
         </Link>
 
