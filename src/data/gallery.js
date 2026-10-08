@@ -1,18 +1,18 @@
 // Reuses the photos you already add for each section, so you never upload twice.
 // category must be one of: Food, Pool, Adventure, Sports, Cabanas, Tour
 export const galleryItems = [
-  { category: "Food", type: "image", src: "/images/food/chicken-kottu.jpg", alt: "Chicken kottu" },
-  { category: "Food", type: "image", src: "/images/food/devilled-chicken.jpg", alt: "Devilled chicken" },
-  { category: "Pool", type: "image", src: "/images/pool/pool-01.jpg", alt: "Swimming pool" },
-  { category: "Pool", type: "image", src: "/images/pool/pool-02.jpg", alt: "Guests enjoying the pool" },
-  { category: "Adventure", type: "image", src: "/images/adventure/adventure-01.jpg", alt: "Adventure activity" },
-  { category: "Adventure", type: "image", src: "/images/adventure/adventure-02.jpg", alt: "Group on an adventure activity" },
-  { category: "Sports", type: "image", src: "/images/sports/carrom.jpg", alt: "Playing carrom" },
-  { category: "Sports", type: "image", src: "/images/sports/volleyball.jpg", alt: "Volleyball court" },
-  { category: "Cabanas", type: "image", src: "/images/cabanas/cabana-01.jpg", alt: "Cabana exterior" },
-  { category: "Cabanas", type: "image", src: "/images/cabanas/cabana-02.jpg", alt: "Inside a cabana" },
-  { category: "Tour", type: "image", src: "/images/tour/yakdessagala-01.jpg", alt: "Yakdessagala tour" },
-  { category: "Tour", type: "image", src: "/images/tour/yakdessagala-02.jpg", alt: "Tour group at Yakdessagala" },
+  { category: "Food", type: "image", src: "/images/food/devilledchiken.PNG", alt: "Devilled chicken" },
+  { category: "Food", type: "image", src: "/images/food/limejuice.PNG", alt: "Fresh lime juice" },
+  { category: "Pool", type: "image", src: "/images/pool/pool.png", alt: "Swimming pool" },
+  { category: "Pool", type: "image", src: "/images/pool/pool2.png", alt: "Guests enjoying the pool" },
+  { category: "Adventure", type: "image", src: "/images/adventure/adventure.png", alt: "Adventure activity" },
+  { category: "Sports", type: "image", src: "/images/sports/carrom.png", alt: "Playing carrom" },
+  { category: "Sports", type: "image", src: "/images/sports/volleyball.png", alt: "Volleyball court" },
+  { category: "Cabanas", type: "image", src: "/images/cabanas/cabana.png", alt: "Cabana exterior" },
+  { category: "Adventure", type: "image", src: "/images/adventure/adventure2.png", alt: "Group on an adventure activity" },
+  { category: "Cabanas", type: "image", src: "/images/cabanas/cabana2.png", alt: "Inside a cabana" },
+  { category: "Tour", type: "image", src: "/images/tour/villagetour.png", alt: "Tour group at Yakdessagala" },
+  { category: "Tour", type: "image", src: "/images/tour/hike.png", alt: "Yakdessagala tour" },
   // { category: "Tour", type: "image", src: "/images/tour/village-03.jpg", alt: "Village tour" },
 
   // Short video clips. Un-comment when the files exist:
